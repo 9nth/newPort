@@ -4,6 +4,15 @@ body {
     background: #606E61;
 }
 
+h3 {
+  font-size: 45px;
+}
+
+@font-face {
+  font-family: "Newake";
+  src: url("/fonts/newake.otf") format("otf");
+}
+
 /* Header */
 .navbar {
     position: fixed;
@@ -11,11 +20,10 @@ body {
     margin:auto;
     left: 0;
     right: 0;
-
 }
 
 .nav-item {
-  font-size: 1.2rem;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -26,7 +34,7 @@ body {
 #drop-port{
   border: none;
   background: none;
-  font-size: 1.2rem;
+  font-size: 30px;
   color: #606E61;
   font-weight: bold;
 }
@@ -39,7 +47,7 @@ body {
 #drop-menu a {
   font-weight: bolder;
   color: #606E61;
-  font-size: 1.2rem;
+  font-size: 30px;
 }
 
 .nav-link,
@@ -66,6 +74,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo-container {
@@ -79,6 +90,10 @@ body {
 
 .passionate {
   text-align: center;
+  font-family: "Newake";
+  font-size: 70px;
+  /* color: #606E61; */
+  color: white;
 }
 
 /* About Section */
@@ -94,21 +109,22 @@ body {
 .about-photo {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 30%;
   margin: auto;
   left: 0;
   right: 0;
 }
 
 .about-photo img {
-  width: 70%;
+  width: 100%;
   border-radius: 50%;
 }
 
 .about-text {
-  width: 90%;
-  font-size: 26px;
+  width: 50%;
+  font-size: 30px;
   color: #fefefe;
+  margin: auto;
 }
 
 .about-text h3 {
@@ -124,7 +140,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
-  /* padding-top: 20px; */
   width: 15%;
   margin: auto;
 }
@@ -142,13 +157,13 @@ body {
 }
 
 .resume-btn {
-  padding-left: 13px;
-  padding-right: 13px;
-  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 35px;
   background: none;
   border: 3px solid white;
   color: #fefefe;
-  font-size: 26px;
+  font-size: 35px;
 }
 
 .resume-btn:hover {
@@ -165,17 +180,31 @@ body {
   margin: auto;
 }
 
+.skills-section-row {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .skills-section h3 {
   text-align: center;
-  font-size: 45px;
+  padding-bottom: 60px;
 }
 
 .skills-section p {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .skills-web,
 .skills-graphic,
 .skills-photo {
-  width: 50%;
+  width: 30%;
+}
+
+.contact-section h3 {
+  text-align: center;
 }
